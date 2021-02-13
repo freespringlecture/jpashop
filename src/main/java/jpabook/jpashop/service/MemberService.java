@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
+ * 회원 서비스
  * Created by KMS on 2021/02/13.
  */
 @Service

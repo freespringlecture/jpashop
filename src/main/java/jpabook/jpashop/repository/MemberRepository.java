@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 /**
+ * 회원 레파지토리
  * Created by KMS on 2021/02/13.
  */
 @Repository

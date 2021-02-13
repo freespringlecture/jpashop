@@ -5,6 +5,7 @@ import lombok.Getter;
 import javax.persistence.Embeddable;
 
 /**
+ * 주소
  * Created by KMS on 2021/02/12.
  */
 @Embeddable

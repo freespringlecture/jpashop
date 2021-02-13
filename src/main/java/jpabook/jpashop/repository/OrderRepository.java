@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 주문 레파지토리
  * Created by KMS on 2021/02/13.
  */
 @Repository
@@ -22,8 +23,9 @@ public class OrderRepository {
     
     private final EntityManager em;
     
-    public void save(Order order) {
+    public Long save(Order order) {
         em.persist(order);
+        return order.getId();
     }
     
     public Order findOne(Long id) {

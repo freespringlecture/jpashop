@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 상품 추상 클래스
  * Created by KMS on 2021/02/12.
  */
 @Entity

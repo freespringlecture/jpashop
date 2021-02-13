@@ -11,6 +11,7 @@ import javax.persistence.*;
 import static javax.persistence.FetchType.*;
 
 /**
+ * 주문 상품
  * Created by KMS on 2021/02/12.
  */
 @Entity

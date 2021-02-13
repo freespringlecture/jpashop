@@ -8,6 +8,7 @@ import javax.persistence.*;
 import static javax.persistence.FetchType.*;
 
 /**
+ * 배송
  * Created by KMS on 2021/02/12.
  */
 @Entity

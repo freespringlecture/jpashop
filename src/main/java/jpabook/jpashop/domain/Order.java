@@ -13,6 +13,7 @@ import java.util.List;
 import static javax.persistence.FetchType.*;
 
 /**
+ * 주문
  * Created by KMS on 2021/02/12.
  */
 @Entity
@@ -29,10 +30,10 @@ public class Order {
     @JoinColumn(name = "member_id")
     private Member member;
     
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
     
-    @OneToOne(fetch = LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = LAZY)
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
     
@@ -62,9 +63,11 @@ public class Order {
         Order order = new Order();
         order.setMember(member);
         order.setDelivery(delivery);
+        
         for (OrderItem orderItem : orderItems) {
             order.addOrderItem(orderItem);
         }
+        
         order.setStatus(OrderStatus.ORDER);
         order.setOrderDate(LocalDateTime.now());
         return order;

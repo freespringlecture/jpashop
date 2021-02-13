@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 회원
  * Created by KMS on 2021/02/12.
  */
 @Entity
